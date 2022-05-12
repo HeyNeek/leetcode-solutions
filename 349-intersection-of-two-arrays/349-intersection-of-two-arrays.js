@@ -15,12 +15,9 @@ var intersection = function(nums1, nums2) {
         }
     }
     
-    console.log(intersectionArr);
-    
     for(let i = 0; i < intersectionArr.length; i++){
         for(let j = i + 1; j < intersectionArr.length; j++){
             if(intersectionArr[i] === intersectionArr[j]){
-                // console.log(intersectionArr);
                 intersectionArr.splice(j, 1);
                 i = -1;
             }
