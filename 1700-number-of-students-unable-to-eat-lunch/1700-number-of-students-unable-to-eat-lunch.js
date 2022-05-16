@@ -5,7 +5,6 @@
  */
 var countStudents = function(students, sandwiches) {
     let count = 0;
-    console.log(count);
     
     while(students.length > 0 && sandwiches.length > 0 && count < 1000){
         if(students[0] === sandwiches[0]){
@@ -18,10 +17,6 @@ var countStudents = function(students, sandwiches) {
             count++;
         }
     }
-    
-    console.log(count);
-    console.log(students);
-    console.log(sandwiches);
     
     if(students.length > 0){
         return students.length;
