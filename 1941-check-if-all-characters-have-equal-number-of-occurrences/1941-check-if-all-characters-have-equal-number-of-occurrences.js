@@ -15,8 +15,6 @@ var areOccurrencesEqual = function(s) {
         numArr.push(charCountMap[property]);
     }
     
-    console.log(numArr);
-    
     for(let i = 0; i < numArr.length - 1; i++){
         if(numArr[i] !== numArr[i + 1]){
             return false;
